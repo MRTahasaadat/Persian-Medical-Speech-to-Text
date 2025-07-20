@@ -47,6 +47,8 @@ This project is a **deep learning-powered speech-to-text system** for **Persian 
   
 Persian-Medical-Speech-to-Text/
 │
+
+
 ├── data/                          
 │   ├── raw/                        
 │   └── processed/                 
