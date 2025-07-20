@@ -42,7 +42,7 @@ This project is a **deep learning-powered speech-to-text system** for **Persian 
 
 ## 🧱 Project Structure | ساختار پروژه
 
-speech-to-text-medical-fa/
+##speech-to-text-medical-fa/
 │
 ├── data/                           
 │   ├── raw/                       
