@@ -229,6 +229,8 @@ MIT License
 For questions, suggestions, or collaboration:
 جهت ارتباط با تیم توسعه:
 
-GitHub Issues
+github:
+https://github.com/MRTahasaadat
 
-Email: mrtahasaadat@gmail.com
+Email:
+mrtahasaadat@gmail.com
