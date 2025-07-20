@@ -44,30 +44,31 @@ This project is a **deep learning-powered speech-to-text system** for **Persian 
 
 
 
-  Persian-Medical-Speech-to-Text
+  
+Persian-Medical-Speech-to-Text/
 │
-├── data/                           
-│   ├── raw/                       
-│   └── processed/                 
+├── data/                           # داده‌های صوتی و پردازش‌شده
+│   ├── raw/                        # فایل‌های صوتی خام (مثلاً .wav)
+│   └── processed/                  # داده‌های برچسب‌خورده، نرمال‌شده یا transcribed
 │
-├── models/
+├── models/                         # مدل‌های آموزش‌دیده (checkpoints)
 │
-├── notebooks/                      
-│   └── EDA.ipynb                   
+├── notebooks/                      # فایل‌های Jupyter برای آزمایش و تحلیل
+│   └── EDA.ipynb                   # آنالیز داده‌ها یا مدل (مثال)
 │
-├── src/                            
-│   ├── preprocessing.py            
-│   ├── train.py                   
-│   ├── inference.py                
-│   └── utils.py                    
+├── src/                            # کدهای اصلی پروژه
+│   ├── preprocessing.py            # تبدیل صدا، حذف نویز، استخراج ویژگی‌ها
+│   ├── train.py                    # آموزش مدل (مثل Wav2Vec، Whisper، ... )
+│   ├── inference.py                # استنتاج از روی مدل آموزش‌دیده
+│   └── utils.py                    # توابع کمکی مثل بارگذاری داده، تنظیمات و ...
 │
-├── configs/                         
-│   └── config.yaml                
+├── configs/                        # فایل‌های پیکربندی (YAML/JSON) برای مدل یا آموزش
+│   └── config.yaml                 # مثال: پارامترهای training یا تنظیمات مدل
 │
-├── requirements.txt               
-├── README.md                      
-├── HELP.md                        
-└── .gitignore 
+├── requirements.txt               # لیست پکیج‌های مورد نیاز (برای pip install)
+├── README.md                      # معرفی، مستندات، نحوه اجرا و اهداف پروژه
+├── HELP.md                        # سوالات رایج، مشکلات، راه‌حل‌ها
+└── .gitignore     
 
 
 <table>
