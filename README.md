@@ -42,143 +42,83 @@ This project is a **deep learning-powered speech-to-text system** for **Persian 
 
 ## 🧱 Project Structure | ساختار پروژه
 
-<table>
-  <thead>
-    <tr>
-      <th>بخش</th>
-      <th>پیشنهاد</th>
-      <th>توضیح</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><code>data/</code></td>
-      <td>افزودن <code>external/</code> و <code>interim/</code></td>
-      <td>داده‌های خام از منابع دیگر یا داده‌های میانی</td>
-    </tr>
-    <tr>
-      <td><code>models/</code></td>
-      <td>تقسیم‌بندی مدل‌ها به پوشه‌های زمان‌دار (timestamped)</td>
-      <td>برای پیگیری نسخه‌های مدل‌ها</td>
-    </tr>
-    <tr>
-      <td><code>notebooks/</code></td>
-      <td>پیشوند عددی مانند <code>01_EDA.ipynb</code></td>
-      <td>مرتب‌سازی خودکار و بهتر در GitHub</td>
-    </tr>
-    <tr>
-      <td><code>src/</code></td>
-      <td>ساختار ماژولار: <code>src/models/</code>، <code>src/datasets/</code></td>
-      <td>افزایش خوانایی، نگهداری آسان</td>
-    </tr>
-    <tr>
-      <td><code>configs/</code></td>
-      <td>تفکیک تنظیمات: مدل، داده، آموزش</td>
-      <td>پیکربندی قابل استفاده مجدد</td>
-    </tr>
-    <tr>
-      <td><code>tests/</code></td>
-      <td>استفاده از <code>pytest</code></td>
-      <td>تست عملکرد و صحت کد</td>
-    </tr>
-    <tr>
-      <td><code>scripts/</code></td>
-      <td>افزودن <code>train.sh</code>، <code>eval.sh</code></td>
-      <td>اجرای سریع و یکپارچه</td>
-    </tr>
-    <tr>
-      <td><code>logs/</code></td>
-      <td>ذخیره لاگ‌ها</td>
-      <td>برای مشاهده و دیباگ</td>
-    </tr>
-    <tr>
-      <td><code>README.md</code></td>
-      <td>توضیح اجرا، مثال، دیاگرام</td>
-      <td>راهنمای کامل برای توسعه‌دهنده‌ها</td>
-    </tr>
-    <tr>
-      <td><code>LICENSE</code></td>
-      <td>استفاده از MIT یا GPL</td>
-      <td>شفافیت قانونی</td>
-    </tr>
-    <tr>
-      <td><code>Dockerfile</code></td>
-      <td>ساخت محیط قابل اجرا با داکر</td>
-      <td>بدون وابستگی به ماشین محلی</td>
-    </tr>
-    <tr>
-      <td><code>.env</code></td>
-      <td>مدیریت متغیرهای محیطی</td>
-      <td>مناسب برای مسیرها و کلیدها</td>
-    </tr>
-  </tbody>
-</table>
-
 
 <table>
   <thead>
     <tr>
-      <th>مسیر</th>
-      <th>توضیح</th>
+      <th>Path</th>
+      <th>توضیح (فارسی)</th>
+      <th>Description (English)</th>
     </tr>
   </thead>
   <tbody>
     <tr>
       <td><code>data/raw/</code></td>
       <td>فایل‌های صوتی خام (ورودی اولیه)</td>
+      <td>Raw audio files as input (e.g., .wav)</td>
     </tr>
     <tr>
       <td><code>data/processed/</code></td>
       <td>داده‌های تمیز و برچسب‌خورده (آمادهٔ آموزش)</td>
+      <td>Cleaned and labeled data for training</td>
     </tr>
     <tr>
       <td><code>models/</code></td>
       <td>مدل‌های آموزش‌دیده و Checkpointها</td>
+      <td>Trained model checkpoints</td>
     </tr>
     <tr>
       <td><code>notebooks/</code></td>
       <td>دفترچه‌های Jupyter برای تحلیل یا نمونه‌سازی</td>
+      <td>Jupyter notebooks for analysis and prototyping</td>
     </tr>
     <tr>
       <td><code>src/preprocessing.py</code></td>
       <td>اسکریپت پیش‌پردازش صدا و داده</td>
+      <td>Audio preprocessing, noise removal, feature extraction</td>
     </tr>
     <tr>
       <td><code>src/train.py</code></td>
-      <td>اسکریپت آموزش مدل یادگیری ماشین</td>
+      <td>آموزش مدل یادگیری ماشین</td>
+      <td>Model training script (e.g., Whisper, Wav2Vec)</td>
     </tr>
     <tr>
       <td><code>src/inference.py</code></td>
-      <td>استنتاج: تبدیل فایل صوتی به متن</td>
+      <td>استنتاج: تبدیل صدا به متن</td>
+      <td>Run inference to convert audio to text</td>
     </tr>
     <tr>
       <td><code>src/utils.py</code></td>
-      <td>توابع کمکی برای پردازش، لاگ، مسیرها و ...</td>
+      <td>توابع کمکی برای پردازش، لاگ و تنظیمات</td>
+      <td>Helper utilities: configs, logging, loaders, etc.</td>
     </tr>
     <tr>
       <td><code>configs/</code></td>
-      <td>فایل‌های پیکربندی (YAML/JSON)</td>
+      <td>فایل‌های پیکربندی YAML یا JSON</td>
+      <td>YAML/JSON configuration files</td>
     </tr>
     <tr>
       <td><code>requirements.txt</code></td>
       <td>لیست کتابخانه‌های پایتون موردنیاز</td>
+      <td>List of required Python packages</td>
     </tr>
     <tr>
       <td><code>README.md</code></td>
       <td>مستندات کلی پروژه</td>
+      <td>Project overview and documentation</td>
     </tr>
     <tr>
       <td><code>HELP.md</code></td>
-      <td>پرسش‌های رایج و راهنمای رفع اشکال</td>
+      <td>سؤالات رایج و راهنمای رفع اشکال</td>
+      <td>FAQ and troubleshooting guide</td>
     </tr>
     <tr>
       <td><code>.gitignore</code></td>
-      <td>نادیده گرفتن فایل‌های غیرضروری توسط Git</td>
+      <td>نادیده‌گرفتن فایل‌های غیرضروری توسط Git</td>
+      <td>Exclude unnecessary files from Git tracking</td>
     </tr>
   </tbody>
 </table>
-
-
 
 ---
 
