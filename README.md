@@ -42,36 +42,6 @@ This project is a **deep learning-powered speech-to-text system** for **Persian 
 
 ## 🧱 Project Structure | ساختار پروژه
 
-
-
-  
-Persian-Medical-Speech-to-Text/
-
-│
-├── data/                          
-│   ├── raw/                        
-│   └── processed/                 
-│
-├── models/                        
-│
-├── notebooks/                   
-│   └── EDA.ipynb                  
-│
-├── src/                            
-│   ├── preprocessing.py           
-│   ├── train.py                   
-│   ├── inference.py                
-│   └── utils.py                     
-│
-├── configs/                       
-│   └── config.yaml                
-│
-├── requirements.txt                
-├── README.md                     
-├── HELP.md                        
-└── .gitignore     
-
-
 <table>
   <thead>
     <tr>
