@@ -45,71 +45,62 @@ This project is a **deep learning-powered speech-to-text system** for **Persian 
 <table>
   <thead>
     <tr>
-      <th>بخش</th>
-      <th>پیشنهاد</th>
+      <th>مسیر</th>
       <th>توضیح</th>
     </tr>
   </thead>
   <tbody>
     <tr>
-      <td><code>data/</code></td>
-      <td>افزودن <code>external/</code> و <code>interim/</code></td>
-      <td>داده‌های خام از منابع دیگر یا داده‌های میانی</td>
+      <td><code>data/raw/</code></td>
+      <td>فایل‌های صوتی خام (ورودی اولیه)</td>
+    </tr>
+    <tr>
+      <td><code>data/processed/</code></td>
+      <td>داده‌های تمیز و برچسب‌خورده (آمادهٔ آموزش)</td>
     </tr>
     <tr>
       <td><code>models/</code></td>
-      <td>تقسیم‌بندی مدل‌ها به پوشه‌های زمان‌دار (timestamped)</td>
-      <td>برای پیگیری نسخه‌های مدل‌ها</td>
+      <td>مدل‌های آموزش‌دیده و Checkpointها</td>
     </tr>
     <tr>
       <td><code>notebooks/</code></td>
-      <td>پیشوند عددی مانند <code>01_EDA.ipynb</code></td>
-      <td>مرتب‌سازی خودکار و بهتر در GitHub</td>
+      <td>دفترچه‌های Jupyter برای تحلیل یا نمونه‌سازی</td>
     </tr>
     <tr>
-      <td><code>src/</code></td>
-      <td>ساختار ماژولار: <code>src/models/</code>، <code>src/datasets/</code></td>
-      <td>افزایش خوانایی، نگهداری آسان</td>
+      <td><code>src/preprocessing.py</code></td>
+      <td>اسکریپت پیش‌پردازش صدا و داده</td>
+    </tr>
+    <tr>
+      <td><code>src/train.py</code></td>
+      <td>اسکریپت آموزش مدل یادگیری ماشین</td>
+    </tr>
+    <tr>
+      <td><code>src/inference.py</code></td>
+      <td>استنتاج: تبدیل فایل صوتی به متن</td>
+    </tr>
+    <tr>
+      <td><code>src/utils.py</code></td>
+      <td>توابع کمکی برای پردازش، لاگ، مسیرها و ...</td>
     </tr>
     <tr>
       <td><code>configs/</code></td>
-      <td>تفکیک تنظیمات: مدل، داده، آموزش</td>
-      <td>پیکربندی قابل استفاده مجدد</td>
+      <td>فایل‌های پیکربندی (YAML/JSON)</td>
     </tr>
     <tr>
-      <td><code>tests/</code></td>
-      <td>استفاده از <code>pytest</code></td>
-      <td>تست عملکرد و صحت کد</td>
-    </tr>
-    <tr>
-      <td><code>scripts/</code></td>
-      <td>افزودن <code>train.sh</code>، <code>eval.sh</code></td>
-      <td>اجرای سریع و یکپارچه</td>
-    </tr>
-    <tr>
-      <td><code>logs/</code></td>
-      <td>ذخیره لاگ‌ها</td>
-      <td>برای مشاهده و دیباگ</td>
+      <td><code>requirements.txt</code></td>
+      <td>لیست کتابخانه‌های پایتون موردنیاز</td>
     </tr>
     <tr>
       <td><code>README.md</code></td>
-      <td>توضیح اجرا، مثال، دیاگرام</td>
-      <td>راهنمای کامل برای توسعه‌دهنده‌ها</td>
+      <td>مستندات کلی پروژه</td>
     </tr>
     <tr>
-      <td><code>LICENSE</code></td>
-      <td>استفاده از MIT یا GPL</td>
-      <td>شفافیت قانونی</td>
+      <td><code>HELP.md</code></td>
+      <td>پرسش‌های رایج و راهنمای رفع اشکال</td>
     </tr>
     <tr>
-      <td><code>Dockerfile</code></td>
-      <td>ساخت محیط قابل اجرا با داکر</td>
-      <td>بدون وابستگی به ماشین محلی</td>
-    </tr>
-    <tr>
-      <td><code>.env</code></td>
-      <td>مدیریت متغیرهای محیطی</td>
-      <td>مناسب برای مسیرها و کلیدها</td>
+      <td><code>.gitignore</code></td>
+      <td>نادیده گرفتن فایل‌های غیرضروری توسط Git</td>
     </tr>
   </tbody>
 </table>
@@ -133,6 +124,8 @@ This project is a **deep learning-powered speech-to-text system** for **Persian 
 git clone https://github.com/YOUR_USERNAME/speech-to-text-medical-fa.git
 cd speech-to-text-medical-fa
 pip install -r requirements.txt
+
+
 🎙️ How to Use | نحوه استفاده
 🔹 1. Run Inference | اجرای تشخیص گفتار
 bash
@@ -225,4 +218,4 @@ For questions, suggestions, or collaboration:
 
 GitHub Issues
 
-Email: youremail@example.com
+Email: mrtahasaadat@gmail.com
