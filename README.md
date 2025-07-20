@@ -45,6 +45,79 @@ This project is a **deep learning-powered speech-to-text system** for **Persian 
 <table>
   <thead>
     <tr>
+      <th>بخش</th>
+      <th>پیشنهاد</th>
+      <th>توضیح</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code>data/</code></td>
+      <td>افزودن <code>external/</code> و <code>interim/</code></td>
+      <td>داده‌های خام از منابع دیگر یا داده‌های میانی</td>
+    </tr>
+    <tr>
+      <td><code>models/</code></td>
+      <td>تقسیم‌بندی مدل‌ها به پوشه‌های زمان‌دار (timestamped)</td>
+      <td>برای پیگیری نسخه‌های مدل‌ها</td>
+    </tr>
+    <tr>
+      <td><code>notebooks/</code></td>
+      <td>پیشوند عددی مانند <code>01_EDA.ipynb</code></td>
+      <td>مرتب‌سازی خودکار و بهتر در GitHub</td>
+    </tr>
+    <tr>
+      <td><code>src/</code></td>
+      <td>ساختار ماژولار: <code>src/models/</code>، <code>src/datasets/</code></td>
+      <td>افزایش خوانایی، نگهداری آسان</td>
+    </tr>
+    <tr>
+      <td><code>configs/</code></td>
+      <td>تفکیک تنظیمات: مدل، داده، آموزش</td>
+      <td>پیکربندی قابل استفاده مجدد</td>
+    </tr>
+    <tr>
+      <td><code>tests/</code></td>
+      <td>استفاده از <code>pytest</code></td>
+      <td>تست عملکرد و صحت کد</td>
+    </tr>
+    <tr>
+      <td><code>scripts/</code></td>
+      <td>افزودن <code>train.sh</code>، <code>eval.sh</code></td>
+      <td>اجرای سریع و یکپارچه</td>
+    </tr>
+    <tr>
+      <td><code>logs/</code></td>
+      <td>ذخیره لاگ‌ها</td>
+      <td>برای مشاهده و دیباگ</td>
+    </tr>
+    <tr>
+      <td><code>README.md</code></td>
+      <td>توضیح اجرا، مثال، دیاگرام</td>
+      <td>راهنمای کامل برای توسعه‌دهنده‌ها</td>
+    </tr>
+    <tr>
+      <td><code>LICENSE</code></td>
+      <td>استفاده از MIT یا GPL</td>
+      <td>شفافیت قانونی</td>
+    </tr>
+    <tr>
+      <td><code>Dockerfile</code></td>
+      <td>ساخت محیط قابل اجرا با داکر</td>
+      <td>بدون وابستگی به ماشین محلی</td>
+    </tr>
+    <tr>
+      <td><code>.env</code></td>
+      <td>مدیریت متغیرهای محیطی</td>
+      <td>مناسب برای مسیرها و کلیدها</td>
+    </tr>
+  </tbody>
+</table>
+
+
+<table>
+  <thead>
+    <tr>
       <th>مسیر</th>
       <th>توضیح</th>
     </tr>
