@@ -202,6 +202,7 @@ Edit
 </div>
 
 🗂️ Dataset Guidelines | ساخت دیتاست
+
 If you want to build your own dataset:
 
 Collect audio samples of doctors reading prescriptions (preferably 16kHz mono .wav)
@@ -221,7 +222,10 @@ data/
   processed/
     001.txt
     002.txt
+
+
 ⚙️ Customization Tips | نکات توسعه
+
 You can fine-tune the model with your own domain-specific data
 
 Add a custom dictionary for Persian drug names 
