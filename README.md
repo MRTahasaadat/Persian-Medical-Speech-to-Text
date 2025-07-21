@@ -122,6 +122,7 @@ This project is a **deep learning-powered speech-to-text system** for **Persian 
 </table>
 
 ---
+<div dir="rtl">
 
 ## 🚀 Installation & Setup | نصب و راه‌اندازی
 
@@ -187,6 +188,7 @@ If you want to build your own dataset:
 Collect audio samples of doctors reading prescriptions (preferably 16kHz mono .wav)
 
 Label them manually in .txt format
+</div>
 
 Organize as:
 
