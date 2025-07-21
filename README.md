@@ -148,16 +148,13 @@ pip install -r requirements.txt
 🔹 1. Run Inference | اجرای تشخیص گفتار
 
 bash
-
 Copy
-
 Edit
-
 python src/inference.py --input_audio data/raw/sample.wav
-
 This will output transcription of the medical audio into a .txt file.
 
 🔹 2. Train Custom Model | آموزش مدل شخصی‌سازی‌شده
+
 bash
 Copy
 Edit
@@ -167,13 +164,9 @@ Use your own medical dataset for better accuracy in prescription recognition.
 🔹 3. Preprocess Your Audio | پیش‌پردازش فایل صوتی
 
 bash
-
 Copy
-
 Edit
-
 python src/preprocessing.py --input_folder data/raw --output_folder data/processed
-
 Includes noise reduction, resampling, segmentation, etc.
 
 💬 Example Output | نمونه خروجی
@@ -250,7 +243,6 @@ We welcome contributions from the open-source community.
 </div>
 
 📄 License | مجوز
-
 MIT License
 
 📬 Contact | ارتباط با ما
