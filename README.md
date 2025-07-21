@@ -5,6 +5,7 @@
   <b>A Deep Learning-based Persian Speech Recognition System for Medical Prescriptions</b><br>
   <b>سیستم تشخیص گفتار فارسی برای نسخه‌های پزشکی، مبتنی بر یادگیری عمیق</b>
 </p>
+<div dir="rtl">
 
 ---
 
@@ -250,3 +251,4 @@ mrtahasaadat@gmail.com
 aliakbaromidyy@gmail.com
 zahramehranpoor83@gmail.com
 ae_sangsefidi@yahoo.com
+</div>
