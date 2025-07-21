@@ -194,9 +194,13 @@ Transcribed text:
 makefile
 Copy
 Edit
+<div dir="rtl">
+
 دارو: استامینوفن ۵۰۰  
 دوز مصرف: ۱ عدد  
 فاصله زمانی: هر ۸ ساعت
+</div>
+
 🗂️ Dataset Guidelines | ساخت دیتاست
 If you want to build your own dataset:
 
@@ -220,7 +224,7 @@ data/
 ⚙️ Customization Tips | نکات توسعه
 You can fine-tune the model with your own domain-specific data
 
-Add a custom dictionary for Persian drug names (پیشنهاد می‌شود)
+Add a custom dictionary for Persian drug names 
 
 Integrate with an NLP pipeline to extract dosage, frequency, and drug name
 
