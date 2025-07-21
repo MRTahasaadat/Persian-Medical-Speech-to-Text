@@ -1,0 +1,51 @@
+# Python compiled files
+__pycache__/
+*.py[cod]
+*.pyd
+*.so
+
+# Jupyter Notebook
+.ipynb_checkpoints/
+
+# Environment
+.env
+venv/
+*.env
+
+# Logs
+*.log
+
+# OS-specific
+.DS_Store
+Thumbs.db
+
+# Model files
+models/
+checkpoints/
+*.pt
+*.pth
+
+# Datasets
+data/raw/
+data/processed/
+data/*.csv
+data/*.tsv
+data/*.json
+
+# Audio files (optional)
+*.wav
+*.mp3
+*.flac
+
+# Results and outputs
+outputs/
+*.txt
+*.pdf
+
+# IDE files
+.vscode/
+.idea/
+
+# Temporary files
+*.tmp
+*.bak
