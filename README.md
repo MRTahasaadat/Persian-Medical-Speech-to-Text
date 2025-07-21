@@ -132,9 +132,9 @@ This project is a **deep learning-powered speech-to-text system** for **Persian 
 - Git  
 - (Optional) CUDA for GPU acceleration  
 
-### 🔧 Install Dependencies | نصب کتابخانه‌ها
+ 🔧 Install Dependencies | نصب کتابخانه‌ها
 
-```bash
+bash
 git clone https://github.com/YOUR_USERNAME/speech-to-text-medical-fa.git
 cd speech-to-text-medical-fa
 pip install -r requirements.txt
