@@ -210,6 +210,7 @@ Accuracy on drug extraction
 Performance in noisy environments
 
 🙋 FAQ / سؤالات متداول
+<div dir="rtl">
 
 آیا این سیستم آنلاین کار می‌کند؟
 
@@ -223,11 +224,16 @@ Performance in noisy environments
 
 با جمع‌آوری داده‌های تخصصی‌تر، افزایش حجم دیتاست، و آموزش مدل بر داده‌های پزشکی
 
+</div>
+
 🤝 Contribution | مشارکت
 
 We welcome contributions from the open-source community.
+<div dir="rtl">
+
 
 برای مشارکت، لطفاً ابتدا یک Issue باز کنید یا از طریق Pull Request مشارکت داشته باشید.
+</div>
 
 📄 License | مجوز
 
@@ -251,4 +257,3 @@ mrtahasaadat@gmail.com
 aliakbaromidyy@gmail.com
 zahramehranpoor83@gmail.com
 ae_sangsefidi@yahoo.com
-</div>
