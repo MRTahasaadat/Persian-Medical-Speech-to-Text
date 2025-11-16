@@ -20,3 +20,15 @@ def transcribe(audio_path, model_size="small"):
         f.write(result["text"])
 
     print(f"\nText saved to file.: {output_path}")
+
+
+if __name__ == "__main__":
+    parser = argparse.ArgumentParser(description="Convert Persian medical audio to text")
+    parser.add_argument("--input_audio", type=str, help="Audio file path (wav, mp3, m4a...)")
+    parser.add_argument("--model_size", type=str, default="small", help="Model size Whisper (tiny, base, small, medium, large)")
+    args = parser.parse_args()
+
+
+    audio_file = args.input_audio if args.input_audio else "audios/sample 2.wav"
+
+    transcribe(audio_file, args.model_size)
